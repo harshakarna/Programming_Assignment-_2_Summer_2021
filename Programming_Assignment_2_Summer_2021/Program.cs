@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace Programming_Assignment_2_Summer_2021
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             //Question1:
             Console.WriteLine("Question 1");
@@ -494,7 +494,7 @@ namespace Programming_Assignment_2_Summer_2021
                 for (int i = 1; i < arr.Length; i++)
                 {
 
-                    CurrentMaximum = Math.Max(arr[i], cmax + arr[i]);
+                    cmax= Math.Max(arr[i], cmax + arr[i]);
                     Max_arr = Math.Max(Max_arr, cmax);
 
                 }
